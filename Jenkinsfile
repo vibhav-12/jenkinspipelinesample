@@ -10,7 +10,7 @@ stage('Compile')
    steps
    {
 	
-	sh 'mvn clean compile'
+	echo "abcd"
 	
 	
    }
@@ -22,7 +22,7 @@ stage('Testing')
 steps
 {
    
-   sh 'mvn test'
+  echo "abcd"
 	
 
 }
@@ -35,7 +35,7 @@ stage('Deploy')
 steps
 {
    
-   sh 'mvn deploy'
+   echo "abcd"
 	
 
 }
