@@ -11,7 +11,7 @@ stage('Compile')
    {
 	   withMaven(maven:'maven_3_5_3')
 	   {
-	sh 'mvn clean compile'
+	bat 'mvn clean compile'
 	echo "abcd"
 	   }
 	
@@ -23,7 +23,7 @@ stage('Testing')
    {
 	   withMaven(maven:'maven_3_5_3')
 	   {
-	sh 'mvn test'
+	bat 'mvn test'
 	echo "abcd"
 	   }
 	
@@ -36,7 +36,7 @@ stage('Deploy')
    {
 	   withMaven(maven:'maven_3_5_3')
 	   {
-	sh 'mvn deploy'
+	bat 'mvn deploy'
 	echo "abcd"
 	   }
 	
